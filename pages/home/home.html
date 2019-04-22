@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-content>
+    <ion-item>
+      <ion-label>Toppings</ion-label>
+      <ion-select [(ngModel)]="toppings" (ionCancel)='cancel()' multiple="true" #tops>
+        <ion-option>Bacon</ion-option>
+        <ion-option>Black Olives</ion-option>
+        <ion-option>Extra Cheese</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button (click)="openIt(tops)">Open</button>
+  </ion-card-content>
+</ion-card>
